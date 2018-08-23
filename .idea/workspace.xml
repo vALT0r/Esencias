@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe949c8d-4697-46a0-b63d-4ca2f1848759" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Apps/Esencias/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="esenciadesc.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/esencias/esenciadesc.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="89" selection-start-line="22" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/Esencias/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="128" column="69" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
+              <folding>
+                <element signature="e#1#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pacientes/view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/Esencias/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Apps/Esencias/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pacientes/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="275" selection-start-line="8" selection-end-line="275" />
+              <folding>
+                <element signature="n#div#0;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#4;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#5;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#6;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#7;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#7;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#8;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#9;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#9;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#10;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#11;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#12;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#12;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#13;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#14;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#15;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#16;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#div#17;n#form#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2584">
+              <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>hidd</find>
+      <find>jumbo</find>
+      <find>jumbotron</find>
+      <find>automatic</find>
+      <find>td</find>
+      <find>btn-primary</find>
+      <find>btn-prim</find>
+      <find>h4</find>
+      <find>display-4</find>
+      <find>text-block</find>
+      <find>gallery</find>
+      <find>body</find>
+      <find>w-clearfix</find>
+      <find>btn-c</find>
+      <find>btn-c1</find>
+      <find>h1</find>
+      <find>image</find>
+      <find>list-ite</find>
+      <find>container</find>
+      <find>col-x</find>
+      <find>table td</find>
+      <find>col-</find>
+      <find>Entry</find>
+      <find>entry</find>
+      <find>datepi</find>
+      <find>form-group</find>
+      <find>Otrossistemas</find>
+      <find>Receta</find>
+      <find>choices</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>http://floralesmisioneras.com/gallery</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="C:/Enviroments/Esencias/Lib/site-packages/django/http/request.py" />
+        <option value="$PROJECT_DIR$/Esencias/Apps/Pacientes/admin.py" />
+        <option value="$PROJECT_DIR$/Esencias/Apps/Sintomas/admin.py" />
+        <option value="$PROJECT_DIR$/Esencias/Apps/Sintomas/models.py" />
+        <option value="$PROJECT_DIR$/Esencias/Apps/Pacientes/models.py" />
+        <option value="$PROJECT_DIR$/Apps/Pacientes/admin.py" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.mod.css" />
+        <option value="$PROJECT_DIR$/static/css/CSS.CSS" />
+        <option value="$PROJECT_DIR$/static/css/css.css" />
+        <option value="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/templates/Esencias/index.html" />
+        <option value="$PROJECT_DIR$/templates/Esencias/menu.html" />
+        <option value="$PROJECT_DIR$/templates/Esencias/esencias.html" />
+        <option value="$PROJECT_DIR$/templates/Esencias/sintomas.html" />
+        <option value="$PROJECT_DIR$/templates/Esencias/subsintomas.html" />
+        <option value="$PROJECT_DIR$/hooks.py" />
+        <option value="C:/Enviroments/Esencias/Lib/site-packages/PyInstaller/hooks/hook-django.contrib.py" />
+        <option value="//CANDELA-PC/Users/Candela/Documents/programa/flores 100 a-c.txt" />
+        <option value="$PROJECT_DIR$/static/css/sintomas.css" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/templates/esencias/esencias.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/search.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/fisico.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/menu.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/fisicos.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/formulas.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/sintomas.html" />
+        <option value="$PROJECT_DIR$/static/js/filter.js" />
+        <option value="$PROJECT_DIR$/templates/esencias/subsintomas.html" />
+        <option value="$PROJECT_DIR$/Apps/Pacientes/models.py" />
+        <option value="$PROJECT_DIR$/Apps/Esencias/admin.py" />
+        <option value="$PROJECT_DIR$/Esencias/urls.py" />
+        <option value="$PROJECT_DIR$/templates/esencias/add.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/formula.html" />
+        <option value="$PROJECT_DIR$/Esencias/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base/base.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/pacientes/add.html" />
+        <option value="$PROJECT_DIR$/templates/esencias/esenciadesc.html" />
+        <option value="$PROJECT_DIR$/templates/pacientes/nuevaconsulta.html" />
+        <option value="$PROJECT_DIR$/Apps/Esencias/urls.py" />
+        <option value="$PROJECT_DIR$/Apps/Esencias/models.py" />
+        <option value="$PROJECT_DIR$/Apps/Esencias/forms.py" />
+        <option value="$PROJECT_DIR$/templates/pacientes/view.html" />
+        <option value="$PROJECT_DIR$/Apps/Esencias/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="Apps" type="462c0819:PsiDirectoryNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="esencias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esencias" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esencias" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="pacientes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Esencias\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Esencias\templates\pacientes" />
+      <recent name="C:\Esencias" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe949c8d-4697-46a0-b63d-4ca2f1848759" name="Default" comment="" />
+      <created>1527260060769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527260060769</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1459431" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32938644" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32938644" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938644" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3091398" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32968238" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Enviroments/Esencias/Lib/site-packages/PyInstaller/hooks/hook-dns.rdata.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Enviroments/Esencias/Lib/site-packages/PyInstaller/hooks/hook-distutils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hooks.py" />
+    <entry file="file://C:/Enviroments/Esencias/Lib/site-packages/PyInstaller/hooks/hook-django.contrib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:////CANDELA-PC/Users/Candela/Documents/programa/flores 100 a-c.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/EsenciasBackup/templates/esencias/formula.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="552" column="21" lean-forward="true" selection-start-line="552" selection-start-column="21" selection-end-line="552" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/esencias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/fisicos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/formulas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/sintomas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Pacientes/apps.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Pacientes/views.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Pacientes/tests.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Pacientes/models.py" />
+    <entry file="file://$PROJECT_DIR$/Apps/Pacientes/admin.py" />
+    <entry file="file://$PROJECT_DIR$/templates/esencias/fisico.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="9" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/migrations/0027_auto_20180725_1927.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/migrations/0026_auto_20180710_1535.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esencias/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esencias/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/subsintomas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="125" selection-start-line="37" selection-start-column="125" selection-end-line="37" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="11" column="161674" selection-start-line="11" selection-start-column="161674" selection-end-line="11" selection-end-column="161674" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/formula.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esencias/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/es.js" />
+    <entry file="file://$PROJECT_DIR$/static/js/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.155/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="514" column="8" selection-start-line="514" selection-start-column="8" selection-end-line="514" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Esencias/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/sintomas.css" />
+    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pacientes/nuevaconsulta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pacientes/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="275" selection-start-line="8" selection-end-line="275" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#2;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#6;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#7;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#7;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#8;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#8;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#9;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#9;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#10;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#11;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#12;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#12;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#13;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#14;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#15;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#16;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#div#17;n#form#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#17;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/esencias/esenciadesc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="89" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pacientes/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="128" column="69" selection-start-line="128" selection-start-column="69" selection-end-line="128" selection-end-column="69" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apps/Esencias/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

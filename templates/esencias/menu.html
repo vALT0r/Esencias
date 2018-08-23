@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href=""><img src="{% static 'images/logo.png'%}" width="96px" height="96px"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item {% if active_tab == 'A' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'esencias' %}">Esencias</a>
+            </li>
+            <li class="nav-item {% if active_tab == 'B' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'formulas' %}">Formulas</a>
+            </li>
+            <li class="nav-item {% if active_tab == 'C' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'sintomas' %}">Sintomas</a>
+            </li>
+            <li class="nav-item {% if active_tab == 'D' %}active{% endif %}">
+                <a class="nav-link" href="{% url 'fisicos' %}">Fisicos</a>
+            </li>
+
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
+            {% if string and string != '0' %}
+            <input class="form-control mr-sm-2" type="text" placeholder="Escribe aqui..." aria-label="Search" name="b"
+                   value="{{string}}" required="required">
+            {% else %}
+            <input class="form-control mr-sm-2" type="text" placeholder="Escribe aqui..." aria-label="Search" name="b"
+                   required="required">
+            {% endif %}
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+    </div>
+</nav>

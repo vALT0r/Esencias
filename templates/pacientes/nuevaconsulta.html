@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="container form-group">
+    <br/>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-2"><label for="form.Observaciones.label" class="label1linea">
+                {{ form.Observaciones.label }}</label>
+            </div>
+            <div class="col-lg-10">{{ form.Observaciones }}</div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-lg-2"><label for="form.Receta.label" class="label1linea">{{ form.Receta.label }}</label>
+            </div>
+            <div class="col-lg-10"><input placeholder="{{ form.Receta.label }}" name="{{ form.Receta.name }}"
+                                          class="form-control" id="form.Receta.label"/></div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-lg-10"></div>
+            <div class="col-lg-2" style="text-align:right">
+        <button class="btn btn-success" type="submit">Guardar</button></div>
+        </div>
+
+
+    </form>
+</div>
+
+
+{% endblock %}

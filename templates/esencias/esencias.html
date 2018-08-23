@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+{% load staticfiles%}
+{% block title %}Esencias{% endblock %}
+{% block navbar %}
+{% include "esencias/menu.html" with active_tab='A' %}
+{% endblock %}
+{% block head %}
+{% endblock %}
+{% block content %}
+
+<main role="main">
+    <div class="container">
+        <div class="row" style="margin:10px 0">
+            <div class="col-lg-3">
+                <h1 style="margin:5px 0">Esencias</h1>
+            </div>
+            <div class="col-lg-5 btn-group">
+                <a class="btn btn-info" href="{% url 'esencias' %}0">Set 100 Flores</a>
+                <a class="btn btn-info" href="{% url 'esencias' %}1">Nuevas Flores</a>
+                <a class="btn btn-primary" href="{% url 'esencias' %}">TODAS</a>
+            </div>
+            <div class="col-lg-4"><input class="form-control" id="myInput" type="text" placeholder="Filtrar..."></div>
+        </div>
+        <div class="row" id="myList">
+            {% if esencias %}{% for esencia in esencias %}
+            <li class="list-item col-lg-4 col-md-12 col-sm-12 link"
+                onclick="window.location='{% url 'esenciadesc' esencia.id '0' '0' '0' '0' %}'">
+                <div class="div-block-2"><img src="{% static 'images/80/' %}{{esencia.Imagen}}" class="image"/></div>
+                <div class="div-block">
+                    <h5>{{esencia.Nombre}}<br/>
+                        <small>{{esencia.Subtitulo}}</small>
+                    </h5>
+                </div>
+            </li>
+            {% endfor %}{% endif %}
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+
+

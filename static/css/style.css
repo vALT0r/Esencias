@@ -1,0 +1,156 @@
+body    {overflow-y:scroll;}
+
+ul,
+.li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.link{
+ cursor: pointer; }
+
+
+.subtitulo {
+font-size:0.85rem;
+}
+
+li a{
+display:block;
+}
+
+ul{
+  overflow:auto;
+}
+/* ==========================================================================
+   Start of custom Webflow CSS
+   ========================================================================== */
+.div-block {
+  max-width:261px;
+  display: block;
+  margin-left: 5px;
+  float: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.div-block-2 {
+  float: left;
+}
+
+.column {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.unordered-list {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: auto;
+}
+
+.list-item {
+  float:left;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #333;
+ /*background-image: -webkit-linear-gradient(90deg, #47005d, #af009a);
+  background-image: linear-gradient(0deg, #47005d, #af009a); */
+  background:#fff;
+  max-width:368px;
+}
+
+.body {
+  margin: 3px;
+  background-color:#e9ecef;
+}
+
+.titulo {
+  font-size:16px;
+  max-width:255px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow:hidden;
+
+}
+
+.subtitulo {
+  max-width:255px;
+  overflow:hidden;
+  color: #333;
+}
+
+.div-block3 {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  float: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+}
+
+.link {
+  display: block;
+  width: 233px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-block {
+  display: block;
+  overflow: hidden;
+  width: 233px;
+  color: #333;
+}
+
+.image-2 {
+  width: 100%;
+}
+
+.section {
+  font-style: italic;
+}
+
+.label1linea{
+margin:13px 0 14px;
+float:right;
+text-align:right;
+}
+
+.label2linea{
+margin:3px 0 3px;
+float:right;
+text-align:right;
+}

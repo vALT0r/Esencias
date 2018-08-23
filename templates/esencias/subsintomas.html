@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+{% load staticfiles%}
+{% block title %}{{sintoma}}{% endblock %}
+{% block navbar %}
+{% include "esencias/menu.html" with active_tab='C' %}
+{% endblock %}
+{% block content %}
+
+<main role="main">
+        <div class="container">
+            <div class="row" style="margin:10px 0">
+                <div class="col-lg-8">
+                    <a href="{% url 'sintomas' %}"><h1 style="margin:5px 0"><< {{sintoma}}</h1></a>
+                </div>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <td align="center"><b>Sintomas</b></td>
+                    <td align="center"><b>Esencias</b></td>
+                </tr>
+                </thead>
+                <tbody>
+                {% if subsintomas %}{% for subsintoma in subsintomas %}
+                <tr>
+                    <td>
+                        <b>{{ subsintoma.Subsintoma }}</b>
+                        {{ subsintoma.Descripcion }}
+                    </td>
+                    <td align="right">
+                        {% for esencia in subsintoma.Esencia.all %}
+                        <a style="margin:0 0 0 30px" href="{% url 'esenciadesc' esencia.id sintoma.id '0' '0' '0' %}">
+                            {{esencia.Nombre}}</a>
+                        {% endfor %}
+                        {% for formula in subsintoma.Formula.all %}
+                        <a style="margin:0 0 0 30px" href="{% url 'formula' formula.id sintoma.id '0' '0'%}"><img
+                                style="width:20px; margin:0 10px 0 0" src="{% static 'images/formula.png'%}">{{formula.Nombre}}</a>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}{% endif %}
+                </tbody>
+            </table>
+        </div>
+</main>
+
+
+{% endblock %}

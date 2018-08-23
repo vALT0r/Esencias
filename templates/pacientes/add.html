@@ -1,0 +1,293 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="container form-group">
+    <br/>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {{ field.errors }}
+        <div class="row"> <!-- Nombre Apellido-->
+            <div class="col-lg-2"><label for="form.Nombre.label" class="label1linea">{{ form.Nombre.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Nombre.label }}" name="{{ form.Nombre.name }}"
+                                         class="form-control" id="form.Nombre.label" required="required"/></div>
+            <div class="col-lg-2"><label for="form.Apellido.label" class="label1linea">{{ form.Apellido.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Apellido.label }}" name="{{ form.Apellido.name }}"
+                                         class="form-control" id="form.Apellido.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Fecha y Hora Nacimiento-->
+            <div class="col-lg-2"><label for="form.FechaNacimiento.label" class="label1linea">
+                {{ form.FechaNacimiento.label }}</label></div>
+            <div class="col-lg-4"><input placeholder="{{ form.FechaNacimiento.label }}"
+                                         name="{{ form.FechaNacimiento.name }}"
+                                         class="form-control" id="form.FechaNacimiento.label"/>
+            </div>
+            <div class="col-lg-2"><label for="form.HoraNacimiento.label" class="label1linea">
+                {{ form.HoraNacimiento.label }}</label></div>
+            <div class="col-lg-4"><input placeholder="{{ form.HoraNacimiento.label }}"
+                                         name="{{ form.HoraNacimiento.name }}"
+                                         class="form-control" id="form.HoraNacimiento.label"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row"><!-- Lugar Nacimiento y Sexo -->
+            <div class="col-lg-2"><label for="form.LugarNacimiento.label" class="label1linea">
+                {{ form.LugarNacimiento.label }}</label></div>
+            <div class="col-lg-4"><input placeholder="{{ form.LugarNacimiento.label }}"
+                                         name="{{ form.LugarNacimiento.name }}"
+                                         class="form-control" id="form.LugarNacimiento.label"/>
+            </div>
+            <div class="col-lg-2"><label class="label1linea">
+                {{ form.Sexo.label }}</label></div>
+            <div class="col-lg-4">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Sexo %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <br/>
+        <div class="row"><!-- Direccion y Localidad-->
+            <div class="col-lg-2"><label for="form.Direccion.label" class="label1linea">
+                {{ form.Direccion.label}}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Direccion.label }}" name="{{ form.Direccion.name }}"
+                                         class="form-control" id="form.Direccion.label"/></div>
+            <div class="col-lg-2"><label for="form.Localidad.label" class="label1linea">
+                {{ form.Localidad.label}}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Localidad.label }}" name="{{ form.Localidad.name }}"
+                                         class="form-control" id="form.Localidad.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Telefono e EMail-->
+            <div class="col-lg-2"><label for="form.Telefono.label" class="label1linea">{{ form.Telefono.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Telefono.label }}" name="{{ form.Telefono.name }}"
+                                         class="form-control" id="form.Telefono.label"/></div>
+            <div class="col-lg-2"><label for="form.Email.label" class="label1linea">{{ form.Email.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Email.label }}" type="email" name="{{ form.Email.name }}"
+                                         class="form-control" id="form.Email.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Profesion y Recomendado-->
+            <div class="col-lg-2"><label for="form.Profesion.label" class="label1linea">
+                {{ form.Profesion.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Profesion.label }}" name="{{ form.Profesion.name }}"
+                                         class="form-control" id="form.Profesion.label"/></div>
+            <div class="col-lg-2"><label for="form.Recomendado.label" class="label1linea">
+                {{ form.Recomendado.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Recomendado.label }}" name="{{ form.Recomendado.name }}"
+                                         class="form-control" id="form.Recomendado.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Hijos y Hermanos -->
+            <div class="col-lg-2"><label for="form.Hijos.label" class="label1linea">{{ form.Hijos.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Hijos.label }}" name="{{ form.Hijos.name }}"
+                                         class="form-control" id="form.Hijos.label"/></div>
+            <div class="col-lg-2"><label for="form.Hermanos.label" class="label1linea">{{ form.Hermanos.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.Hermanos.label }}" name="{{ form.Hermanos.name }}"
+                                         class="form-control" id="form.Hermanos.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Pareja y Tiempo Pareja -->
+            <div class="col-lg-2"><label class="label1linea">{{ form.Pareja.label }}</label>
+            </div>
+            <div class="col-lg-4">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Pareja %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-2"><label for="form.ParejaTiempo.label" class="label1linea">
+                {{ form.ParejaTiempo.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.ParejaTiempo.label }}" name="{{ form.ParejaTiempo.name }}"
+                                         class="form-control" id="form.ParejaTiempo.label"/></div>
+        </div>
+        <br/>
+        <div class="row"><!-- Psicologo -->
+            <div class="col-lg-2"><label class="label1linea">{{ form.Psicologo.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Psicologo %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row"><!-- Constelaciones -->
+            <div class="col-lg-2"><label class="label1linea">{{ form.Constelaciones.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Constelaciones %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row"><!-- Alimentacion -->
+            <div class="col-lg-2"><label class="label1linea">
+                {{ form.Alimentacion.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Alimentacion %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row"><!-- Yoga -->
+            <div class="col-lg-2"><label class="label1linea">
+                {{ form.Yoga.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Yoga %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <br/>
+        <div class="row"><!-- Anemia -->
+            <div class="col-lg-2"><label class="label1linea">
+                {{ form.Anemia.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Anemia %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row"><!-- Diabetes -->
+
+            <div class="col-lg-2"><label class="label1linea">
+                {{ form.Diabetes.label }}</label></div>
+            <div class="col-lg-10">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.Diabetes %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Operaciones y Medicacion -->
+            <div class="col-lg-2"><label for="form.Operaciones.label" class="label1linea">{{ form.Operaciones.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.Operaciones.label }}" name="{{ form.Operaciones.name }}"
+                                            class="form-control" id="form.Operaciones.label" rows="2"></textarea></div>
+            <div class="col-lg-2"><label for="form.Medicacion.label" class="label1linea">{{ form.Medicacion.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.Medicacion.label }}" name="{{ form.Medicacion.name }}"
+                                            class="form-control" id="form.Medicacion.label" rows="2"></textarea></div>
+        </div>
+        <br/>
+        <div class="row"> <!-- EnfermedadesPasadas y EnfermedadesActuales -->
+            <div class="col-lg-2"><label for="form.EnfermedadesPasadas.label" class="label1linea">{{ form.EnfermedadesPasadas.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.EnfermedadesPasadas.label }}" name="{{ form.EnfermedadesPasadas.name }}"
+                                            class="form-control" id="form.EnfermedadesPasadas.label" rows="2"></textarea></div>
+            <div class="col-lg-2"><label for="form.EnfermedadesActuales.label" class="label1linea">{{ form.EnfermedadesActuales.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.EnfermedadesActuales.label }}" name="{{ form.EnfermedadesActuales.name }}"
+                                            class="form-control" id="form.EnfermedadesActuales.label" rows="2"></textarea></div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Antecedentes salud mental en Familiares y Abortos -->
+            <div class="col-lg-2"><label for="form.AntecFamilMental.label" class="label2linea">{{ form.AntecFamilMental.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.AntecFamilMental.label }}" name="{{ form.AntecFamilMental.name }}"
+                                            class="form-control" id="form.AntecFamilMental.label" rows="2"></textarea></div>
+            <div class="col-lg-2"><label for="form.Abortos.label" class="label1linea">{{ form.Abortos.label }}</label>
+            </div>
+            <div class="col-lg-4"><textarea placeholder="{{ form.Abortos.label }}" name="{{ form.Abortos.name }}"
+                                            class="form-control" id="form.Abortos.label" rows="2"></textarea></div>
+        </div>
+        <br/>
+        <div class="row"><!-- OtrosSistemas y DetalleSistemas -->
+            <div class="col-lg-2"><label class="label1linea">{{ form.OtrosSistemas.label }}</label>
+            </div>
+            <div class="col-lg-4">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    {% for radio in form.OtrosSistemas %}
+                    <p class="btn btn-info" style="padding-bottom:4px">
+                        {{radio}}
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-2"><label for="form.DetalleSistemas.label" class="label1linea">
+                {{ form.DetalleSistemas.label }}</label>
+            </div>
+            <div class="col-lg-4"><input placeholder="{{ form.DetalleSistemas.label }}" name="{{ form.DetalleSistemas.name }}"
+                                         class="form-control" id="form.DetalleSistemas.label"/></div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Motivo Visita -->
+            <div class="col-lg-2"><label for="form.MotivoVisita.label" class="label1linea">{{ form.MotivoVisita.label }}</label>
+            </div>
+            <div class="col-lg-10"><textarea placeholder="{{ form.MotivoVisita.label }}" name="{{ form.MotivoVisita.name }}"
+                                            class="form-control" id="form.MotivoVisita.label" rows="4"></textarea></div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Observaciones -->
+            <div class="col-lg-2"><label for="form.Observaciones.label" class="label1linea">{{ form.Observaciones.label }}</label>
+            </div>
+            <div class="col-lg-10"><textarea placeholder="{{ form.Observaciones.label }}" name="{{ form.Observaciones.name }}"
+                                            class="form-control" id="form.Observaciones.label" rows="10"></textarea></div>
+        </div>
+        <br/>
+
+
+        <br/>
+        <div class="row">
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-2" style="text-align:right">
+                <button class="btn btn-success" style="" type="submit">Guardar</button>
+            </div>
+
+        </div>
+
+
+    </form>
+</div>
+
+
+{% endblock %}

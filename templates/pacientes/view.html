@@ -1,0 +1,90 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="container">
+
+        <p>{% if paciente.Nombre %}{{paciente.Nombre}}{% endif %}</p>
+
+        <div class="row"> <!-- Nombre Apellido-->
+            <div class="col-lg-6"><u>Nombre</u>: {{paciente.Nombre}} {{paciente.Apellido}}</div>
+            <div class="col-lg-6"><u>Fecha y hora nacimiento</u>: {{paciente.FechaNacimiento}} - {{paciente.HoraNacimiento}}</div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Lugar Nacimiento y Sexo-->
+            <div class="col-lg-6"><u>Sexo</u>: {{paciente.Sexo}}</div>
+            <div class="col-lg-6"><u>Lugar de Nacimiento</u>: {{paciente.LugarNacimiento}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Direccion y Localidad-->
+            <div class="col-lg-6"><u>Direccion</u>: {{paciente.Direccion}}</div>
+            <div class="col-lg-6"><u>Localidad</u>: {{paciente.Localidad}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Telefono e EMail-->
+            <div class="col-lg-6"><u>Telefono</u>: {{paciente.Telefono}}</div>
+            <div class="col-lg-6"><u>Email</u>: {{paciente.Email}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Profesion y Recomendado-->
+            <div class="col-lg-6"><u>Profesion</u>: {{paciente.Profesion}}</div>
+            <div class="col-lg-6"><u>Recomendado</u>: {{paciente.Recomendado}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Hijos y Hermanos-->
+            <div class="col-lg-6"><u>Hijos</u>: {{paciente.Hijos}}</div>
+            <div class="col-lg-6"><u>Hermanos</u>: {{paciente.Hermanos}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Pareja y Tiempo Pareja-->
+            <div class="col-lg-6"><u>Pareja</u>: {{paciente.Pareja}}</div>
+            <div class="col-lg-6"><u>Tiempo en pareja</u>: {{paciente.ParejaTiempo}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Psicologo y Constelaciones-->
+            <div class="col-lg-6"><u>Psicologo</u>: {{paciente.Psicologo}}</div>
+            <div class="col-lg-6"><u>Constelaciones</u>: {{paciente.Constelaciones}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Alimentacion y Yoga-->
+            <div class="col-lg-6"><u>Alimentacion</u>: {{paciente.Alimentacion}}</div>
+            <div class="col-lg-6"><u>Yoga</u>: {{paciente.Yoga}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Anemia y Diabetes-->
+            <div class="col-lg-6"><u>Anemia</u>: {{paciente.Anemia}}</div>
+            <div class="col-lg-6"><u>Diabetes</u>: {{paciente.Diabetes}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Operaciones y Medicacion-->
+            <div class="col-lg-6"><u>Operaciones</u>: {{paciente.Operaciones}}</div>
+            <div class="col-lg-6"><u>Medicacion</u>: {{paciente.Medicacion}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- EnfermedadesPasadas y EnfermedadesActuales-->
+            <div class="col-lg-6"><u>EnfermedadesPasadas</u>: {{paciente.EnfermedadesPasadas}}</div>
+            <div class="col-lg-6"><u>EnfermedadesActuales</u>: {{paciente.EnfermedadesActuales}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Antecedentes salud mental en Familiares y Abortos-->
+            <div class="col-lg-6"><u>Antecedentes Familiares de Salud Mental</u>: {{paciente.AntecFamilMental}}</div>
+            <div class="col-lg-6"><u>Abortos</u>: {{paciente.Abortos}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- OtrosSistemas y DetalleSistemas-->
+            <div class="col-lg-6"><u>Otros Sistemas</u>: {{paciente.OtrosSistemas}}</div>
+            <div class="col-lg-6"><u>Detalles</u>: {{paciente.DetalleSistemas}} </div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Motivo Visita-->
+            <div class="col-lg-12"><u>Motivo de Visita</u>: {{paciente.MotivoVisita}}</div>
+        </div>
+        <br/>
+        <div class="row"> <!-- Observaciones-->
+            <div class="col-lg-12"><u>Observaciones</u>: {{paciente.Observaciones}}</div>
+        </div>
+        <br/>
+
+
+    </div>
+
+{% endblock %}
+

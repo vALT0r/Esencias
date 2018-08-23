@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    {% block link %}
+    {% endblock %}
+    {% block head %}
+    {% endblock %}
+    <title>{% block title %} Document {% endblock %}</title>
+</head>
+<body>
+<!-- Menu -->
+{% block navbar %}
+{% endblock %}
+<!-- Menu -->
+
+<!-- Contenido -->
+{% block content %}
+{% endblock %}
+<!-- Contenido -->
+<script src="{% static 'js/filter.js'%}"></script>
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+
+</body>
+</html>

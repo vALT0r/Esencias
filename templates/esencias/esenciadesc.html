@@ -1,0 +1,58 @@
+{% extends 'base/base.html' %}
+{% load staticfiles%}
+{% block title %}{{esencia.Nombre}}{% endblock %}
+{% block navbar %}
+{% include "esencias/menu.html" with active_tab='A' %}
+{% endblock %}
+{% block content %}
+
+<main role="main">
+    <div class="container">
+        <div class="row" style="margin:10px 0">
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div>
+                    <a href="
+                    {% if formula.id and formula.id != '0' %}{% url 'formula' formula.id sintoma.id string superformulas.id %}
+                    {% elif sintoma.id and sintoma.id != '0' %}{% url 'subsintomas' sintoma.id %}
+                    {% elif string and string != '0' %}{% url 'search' %}?b={{string}}
+                    {% else %}{% url 'esencias' %}
+                    {% endif %}"><h1><< {{esencia.Nombre}}</h1></a>
+                </div>
+                <div>
+                    <h4>Descripción</h4>
+                    <p>{% if esencia.Descripcion %}{{esencia.Descripcion}}{% endif %}</p>
+                    {% if esencia.PlusInfo %}<p class="text-primary">{{esencia.PlusInfo}}</p>{% endif %}
+                    {% if esencia.Efecto %}<p class="text-primary">Efecto activador: {{esencia.Efecto}}</p>{% endif %}
+
+
+                </div>
+                <div>
+                    <h4>Test Intuitivo</h4>
+                    <p>{% if esencia.TestIntuitivo %}{{esencia.TestIntuitivo}}{% endif %}</p>
+                </div>
+            </div>
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div><img src="{% static 'images/' %}{{esencia.Imagen}}" class="image-2"/></div>
+                <div>
+                    <h4>{% if esencia.Nombre %}{{esencia.Nombre}}{% endif %}
+                            <small>{% if esencia.NombreCientifico %}- ({{esencia.NombreCientifico}}){% endif %}</small>
+                    </h4>
+                    <p>{% if esencia.Subtitulo %}<u>{{esencia.Subtitulo}}</u>{% endif %}</p>
+                </div>
+                <div>
+                    <p>{% if esencia.Positivos %}Positivos: {{esencia.Positivos}}{% endif %} </p>
+                    <p>{% if esencia.Negativos %}Negativos: {{esencia.Negativos}}{% endif %}</p>
+                </div>
+                <div class="section">
+                    <p><em>{{esencia.Pregunta1}}</em></p>
+                    {% if esencia.Pregunta2 %}<p><em>{{esencia.Pregunta2}}</em></p>{% endif %}
+                    {% if esencia.Pregunta3 %}<p><em>{{esencia.Pregunta3}}</em></p>{% endif %}
+                    {% if esencia.Pregunta4 %}<p><em>{{esencia.Pregunta4}}</em></p>{% endif %}
+                    {% if esencia.Pregunta5 %}<p><em>{{esencia.Pregunta5}}</em></p>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

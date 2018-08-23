@@ -1,0 +1,83 @@
+{% extends 'base/base.html' %}
+{% load staticfiles%}
+{% block title %}{{formula.Nombre}}{% endblock %}
+{% block navbar %}
+{% include "esencias/menu.html" with active_tab='B' %}
+{% endblock %}
+{% block content %}
+<main role="main">
+    <div class="container">
+        <div class="row" style="margin:10px 0">
+            <div class="col-lg-8">
+                    <a href="
+                    {% if sintoma.id and sintoma.id != 0 %}{% url 'subsintomas' sintoma.id %}
+                    {% elif superformulas and superformulas.id != 0 %}{% url 'formula' superformulas.id '0' string '0' %}
+                    {% elif string and string != '0' %}{% url 'search' %}?b={{string}}
+                    {% else %}{% url 'formulas' %}
+                    {% endif %}"><h1><< {{formula.Nombre}}</h1></a>
+            </div>
+        </div>
+        <div class="row" style="margin:10px 0">
+            <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <h4>Descripción</h4>
+                    <p>{% if formula.Descripcion %}{{formula.Descripcion}}{% endif %}</p>
+                </div>
+                <div>
+                    <h4>Test Intuitivo</h4>
+                    <p>{% if formula.TestIntuitivo %}{{formula.TestIntuitivo}}{% endif %}</p>
+                </div>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <h4>Componentes</h4>
+                    <table class="table table-bordered">
+                        <tbody>
+                        {% if subformulas %}
+                        {% for subformula in subformulas %}
+                        <tr>
+                            <td>
+                                <a style="margin:0 0 0 30px"
+                                   href="{% url 'formula' subformula.id '0' string formula.id %}"> <b><img
+                                        style="width:20px; margin:0 10px 0 0" src="{% static 'images/formula.png'%}">{{subformula.Nombre}}</b></a>
+                                {{ subformula.Subtitulo }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        {% endif %}
+                        {% if esencias %}
+                        {% for esencia in esencias %}
+                        <tr>
+                            <td>
+                                <a style="margin:0 0 0 30px"
+                                   href="{% url 'esenciadesc' esencia.id sintoma.id formula.id string superformulas.id %}">
+                                    <b>{{esencia.Nombre }}</b></a>
+                                {{ esencia.Subtitulo }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+                <hr/>
+                <div>
+                    <h4>{% if formula.Nombre %}{{formula.Nombre}}{% endif %}</h4>
+                    <p>{% if formula.Subtitulo %}{{formula.Subtitulo}}{% endif %}</p>
+                </div>
+                <div>
+                    <p>{% if formula.Positivos %}Positivos: {{formula.Positivos}}{% endif %}</p>
+                    <p>{% if formula.Negativos %}Negativos: {{formula.Negativos}}{% endif %}</p>
+                </div>
+                <div class="section">
+                    <p><em>{{formula.Pregunta1}}</em></p>
+                    {% if formula.Pregunta2 %}<p><em>{{formula.Pregunta2}}</em></p>{% endif %}
+                    {% if formula.Pregunta3 %}<p><em>{{formula.Pregunta3}}</em></p>{% endif %}
+                    {% if formula.Pregunta4 %}<p><em>{{formula.Pregunta4}}</em></p>{% endif %}
+                    {% if formula.Pregunta5 %}<p><em>{{formula.Pregunta5}}</em></p>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
